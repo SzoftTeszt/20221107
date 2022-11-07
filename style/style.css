@@ -1,5 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+}
+html{
+    font-size:14px;
+}
+body{
+    background-color: #bac5dd;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    max-width: 1300px;
+    width:95%;
+    margin:0 auto;
+    background-color: white;
+}
+#header{
+    height: 580px;
+    background: url('../img/picture1.jpg') center center;
+
+}
+#header h1{
+    padding: 23.5% 0 0 30%;
+    color:white;
+    font-size: 5rem;
+}
+
+#nav{}
+#nav ul{
+    list-style-type: none;
+    background: #5473b4;
+}
+#nav>ul>li{
+    width:19.9999%;
+    float:left;
+    text-align: center;
+    background: #5473b4;
+}
+#nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    padding: 20px 0;
+    display: block;
+}
+#nav ul li a:hover{
+    background-color: aqua;
+    color:black;
+}
+
+
+
+#content{
+    background:#ddd;
+}
+#content p {
+
+    padding: 20px;
+    float:left;
+    width:49.9999%;
+    line-height: 1.5;
+    font-size: .9rem;
+}
+#content img {   
+    width:49.9999%
+}
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.news::after, #nav ul::after{
+    content:'';
+    clear: both;
+    display:table
+}
+.has-submenu{
+    position: relative;
+}
+.has-submenu::after{
+    content:'🢓';
+    color:white;
+    position: absolute;
+    top: 22px;
+    right: 45px;
+}
+.has-submenu:hover .submenu{
+    display: block;
+}
+.submenu{
+    position: absolute;
+    left:0;
+    right:0;
+    display:none;
 }
